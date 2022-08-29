@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <title>Saurabh Mahesh Raut</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="index.html">Home</a>
+                <a class="blog-nav-item active" href="Projects.html">Projects</a>
+                <a class="blog-nav-item" href="Publications.html">Publications</a>
+                <a class="blog-nav-item" href="Saurabh Resume.pdf">CV</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-header">
+            <h2 class="blog-title">Projects</h2>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-8 blog-main">
+                <!--main -->
+                <hr>
+                <div class="blog-post" id="pubs">
+                    <!--pubs-->
+                    <h4><b>Penn Search - Distributed Search Engine</b></h4>
+                    <ul>
+                        <li>Built a completely distributed search engine consisting of Web Crawler, Indexer, Page Ranker, & an interactive UI</li>
+                        <li>Crawled more than 1 million web pages using StormLite, a lightweight version of Apache Storm, running on EC2
+                            instances. SQS was used as a crawl frontier and the crawled pages were stored in a S3 bucket</li>
+                        <li>Indexed and ranked the crawled pages as Hadoop MapReduce tasks and handled search queries from user using
+                            self-built version of Apache Spark</li>
+                    </ul>
+
+                    <h4><b>Penn Cloud</b></h4>
+                    <ul>
+                        <li>Built a cloud platform that supports web-mail service and storage service analogous to Gmail and Google Drive</li>
+                        <li>Storage was based on distributed key-value store (similar to Bigtable) and factors like load balancing, fault
+                            tolerance, replication, consistency were taken into consideration as well</li>
+                    </ul>
+
+                    <h4><b>Chat Server</b></h4>
+                    <ul>
+                        <li>Built a replicated chat server that uses User Datagram Protocol (UDP) to multicast chat messages</li>
+                        <li>The server supports three different ordering modes: unordered, FIFO, and total ordered multicast</li>
+                    </ul>
+
+                    <h4><b>Emotion Analysis of Movie Characters</b></h4>
+                    <ul>
+                        <li>Performed scene wise emotion analysis of movie characters based on their dialogues in the script</li>
+                        <li>Trained and tested a few linear and non-linear models and found that a simple MLP (Multi-Layer Perceptron)
+                            model with BERT embeddings generated best results</li>
+                    </ul>
+
+                    <h4><b>Content Labelling of Hidden Services</b></h4>
+                    <ul>
+                        <li>Classified the darknet data into topics using two different approaches - Topic Modelling and Graph of Words</li>
+                        <li>Co-authored a peer-reviewed paper that was published in Dark Web Pattern Recognition and Crime Analysis Using
+                            Machine Intelligence - IGI Global</li>
+                    </ul>
+                </div>
+                <!--pubs-->
+            </div>
+
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+    <footer class="blog-footer">
+        <p></p>
+    </footer>
+</body>
+
+</html>
